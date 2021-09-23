@@ -8,6 +8,7 @@ import HorizontalSplitIcon from '@mui/icons-material/HorizontalSplit';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 
 import SearchIcon from '@mui/icons-material/Search';
 const Search = styled('div')(({ theme }) => ({
@@ -46,7 +47,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     [theme.breakpoints.up('sm')]: {
       width: '25ch',
       '&:focus': {
-        width: '30ch',
+        width: '25ch',
       },
     },
   },
@@ -54,8 +55,13 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function FlexGrow() {
   return (
     <div style={{ width: '100%' }}>
-      <Box sx={{ display: 'flex', p: 0, bgcolor:'#ebf5f2' }}>
-        <Box sx={{ pt:1.25, flexGrow: 1, }}><h3 className="title1"> Charges</h3></Box>
+      <Box sx={{p: 0, bgcolor:'#ebf5f2' }}>
+      <Grid container >
+      <Grid item xs={12} md={7.5}>
+      <Box sx={{ pt:1.25, flexGrow: 1, }}><h3 className="title1"> Charges</h3></Box>
+        </Grid>
+        
+        <Grid item xs={12} md={4.5} sx={{display:'flex'}}>
         <Box sx={{ p: 1, }}>
         <Search className="search1">
             <SearchIconWrapper>
@@ -67,6 +73,7 @@ export default function FlexGrow() {
             />
           </Search>
         </Box>
+        
         <Box sx={{pt:1, }}>
         <Button sx={{p:1,m:0,}} variant="contained" endIcon={<DashboardIcon/>}></Button>
         
@@ -78,6 +85,8 @@ export default function FlexGrow() {
   
 
         </Box>
+        </Grid>
+        </Grid>
       </Box>
     </div>
   );

@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
 import CropSquareIcon from '@mui/icons-material/CropSquare';
+//import { getPalette } from 'devextreme/viz/palette';
 
 
 import {
@@ -19,7 +20,8 @@ import {
 
   const data = [
     { country: 'Russia', area: 7 ,bgcolor: 'black'},
-    { country: 'Canada', area: 21 }, 
+   
+    { country: 'Canada', area: 21,bgcolor: 'red'}, 
   ];
 
   
@@ -59,18 +61,27 @@ import {
               <Grid container spacing={1}>
               <Grid item xs={12} md={7}>
               
-                    <div style={{ width: '100%' }}>
-                     
-                      <Box sx={{ p: 1,pb:0, flexGrow: 1, }}>
+                    
+
+              <Grid item xs={12} md={12}>
+                      <Box sx={{ p: 1,pb:0,pr:0 }}>
                       <h3 className="title1">Booking vs Earning</h3>
                       </Box>
-                      </div>
+                    </Grid>
+{/*                      
+                      <Box sx={{ p: 1,pb:0, flexGrow: 1, }}>
+                      <h3 className="title1">Booking vs Earning</h3>
+                      </Box> */}
+                      
                 <Chart 
+               
+               palette="red"
                     data={chartData}
                    sx={{pt:0,}} >
 
                        
                   <PieSeries 
+                   color="red"
                     valueField="area"
                     argumentField="country"
                   />
@@ -81,7 +92,7 @@ import {
               </Grid>
               <Grid item xs={12} md={5}>
                 
-                <Box  sx={{mt:10}} >
+                <Box  className="space1">
        
        
                         <Box sx={{}}>
@@ -150,24 +161,3 @@ import {
   }
   
 
-// export default function Types() {
-//     return (
-//       <Box sx={{ width: '100%', maxWidth: 500 }}>
-//        <Typography variant="h6" gutterBottom component="div">
-//        Chargers Availability
-//       </Typography>
-//       <Chart
-//             data={chartData}
-//           >
-//             <PieSeries
-//               valueField="area"
-//               argumentField="country"
-//             />
-           
-//             <Animation />
-//           </Chart>
-        
-      
-//     </Box>
-//   );
-// }

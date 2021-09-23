@@ -79,12 +79,26 @@ header{
     top: -6px !important;
 }
 
+.Component-root-5{
+  stroke-dasharray: 5;
+}
+
+.space1{
+  margin-top: 4rem;
+
+}
+
 
 
 @media (max-width:600px){
   .css-96uuyl{
     
     width: 100% !important;
+  }
+  .space1{
+    margin-top: 0px;
+    padding-left: 3rem;
+  
   }
 
 }
