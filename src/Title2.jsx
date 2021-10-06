@@ -58,7 +58,7 @@ export default function FlexGrow() {
       <Box sx={{p: 0, bgcolor:'#F6F8FB' }}>
       <Grid container >
       <Grid item xs={12} md={7}>
-      <Box sx={{ pt:1.25, flexGrow: 1, }}><h3 className="title1"> Charges</h3></Box>
+      <Box sx={{ pt:1.25, flexGrow: 1, }}><h3 className="title1"> Overview</h3></Box>
         </Grid>
         
         <Grid item xs={12} md={5} sx={{}}>

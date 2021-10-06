@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Component_31_74" data-name="Component 31 – 74" opacity="0.5">
+    <rect id="Rectangle_10565" data-name="Rectangle 10565" width="32" height="32" rx="4" fill="#f6f8fb" opacity="0"/>
+    <g id="outline-power-24px" transform="translate(4 4)">
+      <g id="Bounding_Boxes">
+        <path id="Path_3408" data-name="Path 3408" d="M0,0H24V24H0Z" fill="none"/>
+      </g>
+      <g id="Outline">
+        <path id="Path_3409" data-name="Path 3409" d="M16,9v4.66l-3.5,3.51V19h-1V17.17L8,13.65V9h8m0-6H14V7H10V3H8V7H7.99A1.987,1.987,0,0,0,6,8.98V14.5L9.5,18v3h5V18L18,14.49V9a2.006,2.006,0,0,0-2-2h0V3Z" fill="#f6f8fb"/>
+      </g>
+    </g>
+  </g>
+</svg>
